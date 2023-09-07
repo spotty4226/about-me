@@ -1,0 +1,131 @@
+:root {
+    --font-color: rgb(255, 175, 0);
+  }
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0; /* Ensure the body takes up the full viewport height. */
+}
+
+.full-screen-div {
+    min-height: 100vh; /* This sets the div's height to 100% of the viewport height */
+    width: 100%; /* This sets the div's width to 100% of its container (typically the full width of the viewport) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.half-screen-div {
+    min-height: 60vh; /* This sets the div's height to 100% of the viewport height */
+    width: 100%; /* This sets the div's width to 100% of its container (typically the full width of the viewport) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#alternating-div-1 {
+    background-color: rgb(235, 235, 235);
+    color: black;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+#alternating-div-2 {
+    opacity: 0; 
+    transition: opacity 1s; 
+}
+
+img.rounded-circle {
+    width: 325px;
+    height: 325px;
+    border: 6px solid black;
+}
+
+.typewriter {
+    font-size: calc(1.3em + 3vw);
+}
+
+#typed-output {
+    color: var(--font-color);
+}
+
+.image, #learn-more, .typewriter {
+    text-align: center;
+}
+
+#learn-more {
+    padding-bottom: 7.5vh;
+    opacity: 0;
+    transition: opacity 1.5s; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#about-me-card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 90%;
+    position: relative;
+}
+
+@media (min-width: 768px) { /* This breakpoint (768px) is commonly used for tablets and up, but you can adjust as needed */
+    #about-me-card {
+        max-width: 70vw; /* This is the desktop max-width */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+#about-me {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    font-size: .75em + 3vw;
+    top: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+#about-me-body {
+    background-color: rgb(235, 235, 235);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid rgb(230, 230, 230) 2px;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.cursor {
+    color: var(--font-color);
+    animation: blink 0.8s infinite;
+}
+
+.work-experience {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-experience {
+    background-color: black;
+    color: white;
+    padding: 20px 10vw 20px 10vw;
+    font-weight: bold;
+    font-size: 1em + 3vw;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
