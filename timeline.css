@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(235, 235, 235); /* try #212121 also for dark mode */
+  --primary-color: rgb(235, 235, 235);
   --background-color: #212121;
   --font: 'Courier New';
   --font-color: rgb(255, 175, 0);
@@ -10,7 +10,6 @@
   padding: 0;
 }
 
-/* Timeline Container */
 .timeline {
   background: var(--primary-color);
   margin: 20px auto;
@@ -20,12 +19,10 @@
   align-items: center;
 }
 
-/* Outer Layer with the timeline border */
 .outer {
   border-left: 2px solid #333;
 }
 
-/* Card container */
 .card {
   position: relative;
   margin: 0 0 20px 20px;
@@ -36,20 +33,17 @@
   max-width: 90%;
 }
 
-/* Information about the timeline */
 .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* Title of the card */
 .title {
   color: var(--font-color);
   position: relative;
 }
 
-/* Timeline dot  */
 .title::before {
   content: "";
   position: absolute;
@@ -70,9 +64,9 @@
 }
 
 
-@media (min-width: 768px) { /* This breakpoint (768px) is commonly used for tablets and up, but you can adjust as needed */
+@media (min-width: 768px) {
   .card {
-      max-width: 70vw; /* This is the desktop max-width */
+      max-width: 70vw;
   }
   
   .duration {
