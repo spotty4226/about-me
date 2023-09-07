@@ -45,7 +45,7 @@ document.addEventListener('scroll', function() {
     
     const percentageVisible = 1 - ((rect.bottom - windowHeight) / rect.height);
 
-    if (percentageVisible >= 0.35) {
+    if (percentageVisible >= 0.125) {
         div.style.opacity = '1';
     } else {
         div.style.opacity = '0';
