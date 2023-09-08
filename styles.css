@@ -18,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    box-shadow: 0 4px 6px -2px rgba(194, 194, 194, 0.1);
 }
 
 .half-screen-div {
@@ -101,6 +102,7 @@ img.rounded-circle {
 }
 
 .work-experience, .education {
+    font-size: 1.5em;
     padding-top: 30px;
     display: flex;
     justify-content: center;
@@ -108,8 +110,7 @@ img.rounded-circle {
 }
 
 #education-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     max-width: 90%;
     position: relative;
 }
@@ -141,6 +142,31 @@ img.rounded-circle {
     font-weight: bold;
     font-size: 1em + 3vw;
     border-radius: .25rem;
+}
+
+.footer {
+    min-height: 15vh;
+    padding-bottom: 30px;
+}
+
+.social-media-image {
+    width: 30px;
+    height: 30px;
+}
+
+.socials {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+
+.link {
+    padding-left: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
 }
 
 @keyframes blink {
