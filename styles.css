@@ -169,11 +169,14 @@ img.rounded-circle {
     font-size: 20px;
 }
 
-li {
-    position: relative;
-    margin-left: 20px;
+li {    
     padding-top: 5px;
-  }
+}
+
+ul {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 @keyframes blink {
     0%, 100% {
@@ -197,5 +200,10 @@ li {
 
     .gpa {
         text-align: right;
+    }
+
+    ul {
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
